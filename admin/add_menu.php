@@ -294,7 +294,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
                                             <div class="col-md-6">
                                                 <div class="form-group has-danger">
                                                     <label class="control-label">Description</label>
-                                                    <input type="text" name="about" class="form-control form-control-danger" placeholder="Tasty hot biriyani ;)">
+                                                    <input type="text" name="about" class="form-control form-control-danger" placeholder="Tasty hot biriyani">
                                                     </div>
                                             </div>
                                             <!--/span-->
@@ -304,7 +304,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="control-label">Price </label>
-                                                    <input type="text" name="price" class="form-control" placeholder="&#8377;">
+                                                    <input type="text" name="price" class="form-control" placeholder="Tk">
                                                    </div>
                                             </div>
                                             <!--/span-->
