@@ -87,7 +87,7 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="#">
-    <title>Starter Template for Bootstrap</title>
+    <title>Sign up </title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -103,7 +103,7 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
             <nav class="navbar navbar-dark">
                <div class="container">
                   <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">&#9776;</button>
-                  <a class="navbar-brand" href="index.php"> <img class="img-rounded" src="images/food-picky-logo.png" alt=""> </a>
+                  <a class="navbar-brand" href="index.php"> <strong>ORFOS</strong> </a>
                   <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
                      <ul class="nav navbar-nav">
 							<li class="nav-item"> <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
@@ -113,14 +113,13 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
 						if(empty($_SESSION["user_id"]))
 							{
 								echo '<li class="nav-item"><a href="login.php" class="nav-link active">Login</a> </li>
-							  <li class="nav-item"><a href="registration.php" class="nav-link active">Sign Up</a> </li>';
+							    <li class="nav-item"><a href="registration.php" class="nav-link active">Sign Up</a> </li>';
 							}
 						else
 							{
-									
-									
-										echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">Your Orders</a> </li>';
-									echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">LogOut</a> </li>';
+										
+								echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">Your Orders</a> </li>';
+								echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">LogOut</a> </li>';
 							}
 
 						?>
@@ -135,22 +134,24 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
             <div class="breadcrumb">
                <div class="container">
                   <ul>
-                     <li><a href="#" class="active">
-					  <span style="color:red;"><?php echo $message; ?></span>
-					   <span style="color:green;">
-								<?php echo $success; ?>
-										</span>
-					   
-					</a></li>
-                    
-                  </ul>
+                        <li>
+                            <a href="#" class="active">
+                                <span style="color:red;"><?php echo $message; ?></span>
+                                <span style="color:green;">
+                                    <?php echo $success; ?>
+                                </span>
+                        
+                            </a>
+                        
+                        </li>
+                   </ul>
                </div>
             </div>
             <section class="contact-page inner-page">
                <div class="container">
                   <div class="row">
                      <!-- REGISTER -->
-                     <div class="col-md-8">
+                     <div class="col-md-12">
                         <div class="widget">
                            <div class="widget-body">
                               
@@ -174,7 +175,7 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
                                     </div>
                                     <div class="form-group col-sm-6">
                                        <label for="exampleInputEmail1">Phone number</label>
-                                       <input class="form-control" type="text" name="phone" id="example-tel-input-3" placeholder="Phone"> <small class="form-text text-muted">We"ll never share your email with anyone else.</small> 
+                                       <input class="form-control" type="text" name="phone" id="example-tel-input-3" placeholder="Phone"> <small class="form-text text-muted">We"ll never share your Phone number with anyone else.</small> 
                                     </div>
                                     <div class="form-group col-sm-6">
                                        <label for="exampleInputPassword1">Password</label>
@@ -192,8 +193,8 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
                                  </div>
                                 
                                  <div class="row">
-                                    <div class="col-sm-4">
-                                       <p> <input type="submit" value="Register" name="submit" class="btn theme-btn"> </p>
+                                    <div class="col-sm-12">
+                                       <p align="center"> <input type="submit" value="Register" name="submit" class="btn theme-btn"> </p>
                                     </div>
                                  </div>
                               </form>
@@ -203,77 +204,13 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
                         </div>
                         <!-- /REGISTER -->
                      </div>
-                     <!-- WHY? -->
-                     <div class="col-md-4">
-                        <h4>Registration is fast, easy and free.</h4>
-                        <p>Get registered to avail all these benefits:</p>
-						<ul>
-						<li>Choose from Wide varities of dishes</li>
-						<li>Live food tracking</li>
-						<li>Easy refunds & cancellations</li>
-						<li>Free home delivery</li>
-						<li>Special discounts & coupons</li>
-						</ul>
-                        <hr>
-                        <img src="http://placehold.it/400x300" alt="" class="img-fluid">
-                        <p>Frequently Asked?</p>
-                        <div class="panel">
-                           <div class="panel-heading">
-                              <h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" class="panel-toggle collapsed" href="#faq1" aria-expanded="false"><i class="ti-info-alt" aria-hidden="true"></i>What is FoodPicky Customer Care Number?</a></h4>
-                           </div>
-                           <div class="panel-collapse collapse" id="faq1" aria-expanded="false" role="article" style="height: 0px;">
-                              <div class="panel-body">We value our customer’s time and hence moved away from a single customer care number to a comprehensive chat-based support system for quick and easy resolution. You no longer have to go through the maze of an IVRS call support. Just search for your issue in the help section on this page and initiate a chat with us. A customer care executive will be assigned to you shortly. You can also email us your issue on support@foodpicky.in</div>
-                           </div>
-                        </div>
-                        <!-- end:panel -->
-						
-						<div class="panel">
-                           <div class="panel-heading">
-                              <h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq2" aria-expanded="true"><i class="ti-info-alt" aria-hidden="true"></i>Do you charge for delivery?</a></h4>
-                           </div>
-                           <div class="panel-collapse collapse" id="faq2" aria-expanded="true" role="article">
-                              <div class="panel-body">Delivery fee varies from city to city and is applicable if order value is below a certain amount. Additionally, certain restaurants might have fixed delivery fees. Delivery fee (if any) is specified on the 'Review Order' page.</div>
-                           </div>
-                        </div>
-                        <!-- end:Panel -->
-                        <h4 class="m-t-20">Contact Customer Support</h4>
-                        <p> If you're looking for more help or have a question to ask, please feel free :)</p>
-                        <p> <a href="#" class="btn theme-btn m-t-15">Contact Us</a> </p>
-                     </div>
-                     <!-- /WHY? -->
+                     
                   </div>
                </div>
             </section>
-                    <section class="app-section">
-            <div class="app-wrap">
-                <div class="container">
-                    <div class="row text-img-block text-xs-left">
-                        <div class="container">
-                            <div class="col-xs-12 col-sm-5 right-image text-center">
-                                <figure> <img src="images/app.png" alt="Right Image" class="img-fluid"> </figure>
-                            </div>
-                            <div class="col-xs-12 col-sm-7 left-text">
-                                <h3>Food Picky - The Best Food Delivery App</h3>
-                                <p>Got Hungry? Get the food you want, from the restaurants you love, delivered at blinking speed.
+                   
+         <!-- start: FOOTER -->
 
-								Eat what you like, where you like, when you like. Find the local flavours you crave, all at the tap of a button.</p>
-                                <div class="social-btns">
-                                    <a href="#" class="app-btn apple-button clearfix">
-                                        <div class="pull-left"><i class="fa fa-apple"></i> </div>
-                                        <div class="pull-right"> <span class="text">Available on the</span> <span class="text-2">App Store</span> </div>
-                                    </a>
-                                    <a href="#" class="app-btn android-button clearfix">
-                                        <div class="pull-left"><i class="fa fa-android"></i> </div>
-                                        <div class="pull-right"> <span class="text">Available on the</span> <span class="text-2">Play Store</span> </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-                    <!-- start: FOOTER -->
         <footer class="footer">
             <div class="container">
                 <!-- top footer statrs -->
@@ -364,8 +301,11 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
                 <!-- bottom footer ends -->
             </div>
         </footer>
+
         <!-- end:Footer -->
-         </div>
+
+    </div>
+
          <!-- end:page wrapper -->
       
     <!-- Bootstrap core JavaScript
