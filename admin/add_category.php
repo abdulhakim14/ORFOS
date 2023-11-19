@@ -11,9 +11,9 @@ if(isset($_POST['submit'] ))
     if(empty($_POST['c_name']))
 		{
 			$error = '<div class="alert alert-danger alert-dismissible fade show">
-																<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-																<strong>field Required!</strong>
-															</div>';
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<strong>field Required!</strong>
+				</div>';
 		}
 	else
 	{
@@ -25,9 +25,9 @@ if(isset($_POST['submit'] ))
 	if(mysqli_num_rows($check_cat) > 0)
      {
     	$error = '<div class="alert alert-danger alert-dismissible fade show">
-																<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-																<strong>Category already exist!</strong>
-															</div>';
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<strong>Category already exist!</strong>
+			</div>';
      }
 	else{
        
@@ -35,8 +35,8 @@ if(isset($_POST['submit'] ))
 	$mql = "INSERT INTO res_category(c_name) VALUES('".$_POST['c_name']."')";
 	mysqli_query($db, $mql);
 			$success = 	'<div class="alert alert-success alert-dismissible fade show">
-																<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-																<strong>Congrats!</strong> New Category Added Successfully.</br></div>';
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<strong>Congrats!</strong> New Category Added Successfully.</br></div>';
 	
     }
 	}
@@ -53,8 +53,8 @@ if(isset($_POST['submit'] ))
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-	<link rel="icon" type="image/png" sizes="16x16" href="images/foodpicky.png">
-    <title>FoodPicky - Admin Dashboard</title>
+	<link rel="icon" type="image/png" sizes="16x16" href="images/orfos-logo.png">
+    <title>ORFOS - Admin Dashboard</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -83,10 +83,10 @@ if(isset($_POST['submit'] ))
                 <div class="navbar-header">
                     <a class="navbar-brand" href="index.php">
                         <!-- Logo icon -->
-                        <b><img src="images/foodpicky.png" alt="homepage" class="dark-logo" width = "25px"/></b>
+                        <b><img src="images/orfos-logo.png" alt="homepage" class="dark-logo" width = "25px"/></b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
-                        <span><b>Food Picky</b></span>
+                        <span><b>ORFOS</b></span>
                     </a>
                 </div>
                 <!-- End Logo -->
