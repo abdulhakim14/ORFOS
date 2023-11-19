@@ -86,14 +86,14 @@ else
     <div id="main-wrapper">
 
         <!-- header header  -->
-        
         <?php
         include("./header.php");
         ?>
-
         <!-- End header header -->
 
         <!-- Left Sidebar  -->
+
+        
         <div class="left-sidebar">
             <!-- Sidebar scroll-->
             <div class="scroll-sidebar">
@@ -146,7 +146,11 @@ else
             </div>
             <!-- End Sidebar scroll-->
         </div>
+
+
         <!-- End Left Sidebar  -->
+
+
         <!-- Page wrapper  -->
         <div class="page-wrapper" style="height:1200px;">
             <!-- Bread crumb -->
@@ -267,11 +271,6 @@ else
                             </div>
                         </div>
 						 </div>
-					
-					
-					
-					
-					
 					
 					
                 </div>
