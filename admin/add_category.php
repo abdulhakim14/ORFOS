@@ -12,7 +12,7 @@ if(isset($_POST['submit'] ))
 		{
 			$error = '<div class="alert alert-danger alert-dismissible fade show">
 				<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<strong>field Required!</strong>
+				<strong>Field Required!</strong>
 				</div>';
 		}
 	else
@@ -43,8 +43,14 @@ if(isset($_POST['submit'] ))
 
 }
 
-
+if(empty($_SESSION["adm_id"]))
+{
+	header('location:index.php');
+}
+else
+{
 ?>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,17 +85,14 @@ if(isset($_POST['submit'] ))
         <!-- header header  -->
         <div class="header">
             <nav class="navbar top-navbar navbar-expand-md navbar-light">
-                                <!-- Logo -->
+                             
                 <div class="navbar-header">
                     <a class="navbar-brand" href="index.php">
-                        <!-- Logo icon -->
-                        <b><img src="images/orfos-logo.png" alt="homepage" class="dark-logo" width = "25px"/></b>
-                        <!--End Logo icon -->
-                        <!-- Logo text -->
+                       
                         <span><b>ORFOS</b></span>
                     </a>
                 </div>
-                <!-- End Logo -->
+             
                 <div class="navbar-collapse">
                     <!-- toggle and nav items -->
                     <ul class="navbar-nav mr-auto mt-md-0">
@@ -99,31 +102,10 @@ if(isset($_POST['submit'] ))
                      
                        
                     </ul>
-                    <!-- User profile and search -->
+
+                    <!-- User profile -->
                     <ul class="navbar-nav my-lg-0">
 
-                        <!-- Search -->
-                        <li class="nav-item hidden-sm-down search-box"> <a class="nav-link hidden-sm-down text-muted  " href="javascript:void(0)"><i class="ti-search"></i></a>
-                            <form class="app-search">
-                                <input type="text" class="form-control" placeholder="Search here"> <a class="srh-btn"><i class="ti-close"></i></a> </form>
-                        </li>
-                        <!-- Comment -->
-                        <li class="nav-item dropdown">
-                           
-                            <div class="dropdown-menu dropdown-menu-right mailbox animated zoomIn">
-                                <ul>
-                                    <li>
-                                        <div class="drop-title">Notifications</div>
-                                    </li>
-                                    
-                                    <li>
-                                        <a class="nav-link text-center" href="javascript:void(0);"> <strong>Check all notifications</strong> <i class="fa fa-angle-right"></i> </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- End Comment -->
-                      
                         <!-- Profile -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/users/5.jpg" alt="user" class="profile-pic" /></a>
@@ -347,3 +329,6 @@ if(isset($_POST['submit'] ))
 </body>
 
 </html>
+<?php
+}
+?>
