@@ -14,8 +14,8 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-	<link rel="icon" type="image/png" sizes="16x16" href="images/foodpicky.png">
-    <title>FoodPicky - Admin Dashboard</title>
+	<link rel="icon" type="image/png" sizes="16x16" href="images/orfos.png">
+    <title>Admin All Orders</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->

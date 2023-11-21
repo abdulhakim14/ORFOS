@@ -74,7 +74,7 @@ if(isset($_POST['submit'] ))
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/orfos.png">
-    <title>ORFOS - Admin Dashboard</title>
+    <title>Admin Update User</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -158,14 +158,14 @@ if(isset($_POST['submit'] ))
                                                 <div class="form-group">
                                                     <label class="control-label">Username</label>
                                                     <input type="text" name="uname" class="form-control" value="<?php  echo $newrow['username']; ?>" placeholder="username">
-                                                   </div>
+                                                </div>
                                             </div>
                                             <!--/span-->
                                             <div class="col-md-6">
                                                 <div class="form-group has-danger">
                                                     <label class="control-label">First Name</label>
                                                     <input type="text" name="fname" class="form-control form-control-danger"  value="<?php  echo $newrow['f_name'];  ?>" placeholder="jon">
-                                                    </div>
+                                                </div>
                                             </div>
                                             <!--/span-->
                                         </div>
@@ -175,41 +175,50 @@ if(isset($_POST['submit'] ))
                                                 <div class="form-group">
                                                     <label class="control-label">Last Name </label>
                                                     <input type="text" name="lname" class="form-control" placeholder="doe"  value="<?php  echo $newrow['l_name']; ?>">
-                                                   </div>
+                                                </div>
                                             </div>
                                             <!--/span-->
                                             <div class="col-md-6">
                                                 <div class="form-group has-danger">
                                                     <label class="control-label">Email</label>
                                                     <input type="text" name="email" class="form-control form-control-danger"  value="<?php  echo $newrow['email'];  ?>" placeholder="example@gmail.com">
-                                                    </div>
+                                                </div>
                                             </div>
                                             <!--/span-->
                                         </div>
                                         <!--/row-->
-										 <div class="row">
+										<div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="control-label">Password</label>
                                                     <input type="text" name="password" class="form-control form-control-danger"   value="<?php  echo $newrow['password'];  ?>" placeholder="password">
-                                                    </div>
                                                 </div>
+                                            </div>
                                         
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="control-label">Phone</label>
                                                     <input type="text" name="phone" class="form-control form-control-danger"   value="<?php  echo $newrow['phone'];  ?>" placeholder="phone">
-                                                    </div>
                                                 </div>
                                             </div>
                                             <!--/span-->
-                                            
-                                      
+                                        </div>
+                                        <!--/row-->
+										<div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">Address</label>
+                                                    <input type="text" name="address" class="form-control form-control-danger"   value="<?php  echo $newrow['address'];  ?>" placeholder="address">
+                                                </div>
+                                            </div>
                                             <!--/span-->
                                         </div>
+                                        
+
+                                        
                                     </div>
                                     <div class="form-actions">
-                                        <input type="submit" name="submit" class="btn btn-success" value="Save"> 
+                                        <input type="submit" name="submit" class="btn btn-warning" value="Save"> 
                                         <a href="dashboard.php" class="btn btn-inverse">Cancel</a>
                                     </div>
                                 </form>
@@ -217,16 +226,7 @@ if(isset($_POST['submit'] ))
                         </div>
                     </div>
 					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
+			
 					
                 </div>
                 <!-- End PAge Content -->
