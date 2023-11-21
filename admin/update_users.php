@@ -14,7 +14,10 @@ if(isset($_POST['submit'] ))
 		empty($_POST['lname']) ||  
 		empty($_POST['email'])||
 		empty($_POST['password'])||
-		empty($_POST['phone']))
+		empty($_POST['phone'])||
+        empty($_POST['address']))
+
+    
 		{
 			$error = '<div class="alert alert-danger alert-dismissible fade show">
 																<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -42,7 +45,7 @@ if(isset($_POST['submit'] ))
 															</div>';
 	}
 	
-	elseif(strlen($_POST['phone']) < 10)
+	elseif(strlen($_POST['phone']) < 11)
 	{
 		$error = '<div class="alert alert-danger alert-dismissible fade show">
 																<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -53,7 +56,7 @@ if(isset($_POST['submit'] ))
 	else{
        
 	
-	$mql = "update users set username='$_POST[uname]', f_name='$_POST[fname]', l_name='$_POST[lname]',email='$_POST[email]',phone='$_POST[phone]',password='".md5($_POST['password'])."' where u_id='$_GET[user_upd]' ";
+	$mql = "update users set username='$_POST[uname]', f_name='$_POST[fname]', l_name='$_POST[lname]',email='$_POST[email]',phone='$_POST[phone]',password='".md5($_POST['password'])."',address='$_POST[address]' where u_id='$_GET[user_upd]' ";
 	mysqli_query($db, $mql);
 			$success = 	'<div class="alert alert-success alert-dismissible fade show">
 																<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
