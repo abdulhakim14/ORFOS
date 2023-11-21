@@ -1,10 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Give+You+Glory);
 
 /*------------------------------------------------------------------
-Project Name: Foodpicky - Online food ordering system 
+Project Name: ORFOS - Online Restaurant Food Ordering System 
 Version: 1.0
-Authors: GPW Team  
-Channel Name: Genie Projects World
+Authors: Abdul Hakim 
+
 -------------------------------------------------------------------*/
 
 
@@ -372,9 +372,10 @@ hr {
 }
 
 .navbar {
-    background-image: url("../images/menu-bg.jpg");
+    background-color: rgb(196, 120, 7);
     padding: .95rem 1rem;
     border-radius: 0;
+    
 }
 
 .navbar-nav .nav-item {
@@ -382,7 +383,7 @@ hr {
 }
 
 .navbar-dark .navbar-toggler {
-    background-image: none;
+    background-color: none;
     border-color: transparent;
 }
 
@@ -396,6 +397,7 @@ hr {
     }
     .navbar-brand {
         float: right;
+
     }
     .navbar-brand,
     .navbar-nav .nav-item {
@@ -1433,7 +1435,7 @@ App section
 ============================*/
 
 footer {
-    background: url(../images/pattern.png)center repeat;
+    background: #0c0c0c;
     padding: 90px 0;
     z-index: 1;
     position: relative;
@@ -1455,7 +1457,10 @@ footer h5 {
     margin-bottom: 15px;
 }
 
-footer p,
+footer p{
+    font-weight: 300;
+    color: #fff;
+}
 footer,
 footer span {
     font-weight: 300;

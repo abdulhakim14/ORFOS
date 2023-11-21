@@ -3,7 +3,7 @@
     <div class="header">
             <nav class="navbar top-navbar navbar-expand-md navbar-light">             
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.php">
+                    <a class="navbar-brand" href="dashboard.php">
                         <span><b>ORFOS</b></span>
                     </a>
                 </div>
@@ -21,11 +21,18 @@
                        
                     </ul>
 
+                    <!-- View Site -->
+
+                    <ul>
+                        <li> <a href="../index.php"> <span><b>View Site</b></span> </a></li>
+                    </ul>
+
                     <!-- User profile -->
 
                     <ul class="navbar-nav my-lg-0">
 
-                        <!-- Profile -->
+                        <!-- Profile --> 
+                    
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
