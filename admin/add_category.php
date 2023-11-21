@@ -226,7 +226,7 @@ else
             </div>
             <!-- End Container fluid  -->
             <!-- footer -->
-            <footer class="footer"> © 2022 All rights reserved. Made with &#x1F49C; by <b><a href="https://www.youtube.com/channel/UC4_6-VSWBw_QHMyjrDDEvVQ"> GPW</a></b> Team. </footer>
+            <footer class="footer"> © 2023 All rights reserved by ORFOS. Developed by Abdul  Hakim </footer>
             <!-- End footer -->
         </div>
         <!-- End Page wrapper  -->

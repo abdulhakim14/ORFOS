@@ -94,7 +94,7 @@ if(isset($_POST['submit1'] ))
 
 <head>
   <meta charset="UTF-8">
-  <title>ORFOS Admin-Login</title>
+  <title>ORFOS Admin Login</title>
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
@@ -112,7 +112,7 @@ if(isset($_POST['submit1'] ))
   
 <div class="container">
   <div class="info">
-    <h1>ORFOS</h1><span>Admin login page</span>
+    <h5>Admin login page</h5>
   </div>
 </div>
 <div class="form">
