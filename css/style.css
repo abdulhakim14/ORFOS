@@ -152,7 +152,7 @@ hr {
 }
 
 .custom-radio .custom-control-input:checked~.custom-control-indicator {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns="http: //www.w3.org/2000/svg" viewBox="0 0 8 8"%3E%3Cpath fill="%23fff" d="M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z"/%3E%3C/svg%3E")
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"%3E%3Cpath fill="%23fff" d="M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z"/%3E%3C/svg%3E")
 }
 
 .custom-control-input:active~.custom-control-indicator {
@@ -505,10 +505,10 @@ hr {
 }
 
 .hero h1 {
-    font-family: "Give You Glory", cursive;
+    font-family: "Times New Roman", cursive;
     color: #fff;
-    font-size: 3.7em;
-    font-weight: 700;
+    font-size: 3.5em;
+    font-weight: 600;
 }
 
 .hero:before {
@@ -557,7 +557,7 @@ hr {
 }
 
 .step-item h4 {
-    font-family: "Give You Glory", cursive;
+    font-family: "cursive", cursive;
     color: #fff;
     font-size: 21px;
 }
@@ -574,11 +574,11 @@ hr {
     top: -20%;
     width: 130px;
     height: 32px;
-    background: url(../images/arrow.png);
+    background: none;
 }
 
 .step2:after {
-    background: url(../images/arrow-dotted.png);
+    background:none;
     height: 25px;
     right: -95%;
     top: -15%;
@@ -631,6 +631,8 @@ hr {
 .popular {
     padding: 70px 0 90px;
     background-size: 100%;
+    background-color:#368644;
+
 }
 
 .food-item-wrap {
@@ -979,9 +981,7 @@ How it works section
 -----------------------------------*/
 
 .how-it-works {
-    background-image: url(../images/city.png), url(../images/pattern.png);
-    background-repeat: repeat-x, repeat;
-    background-position: bottom, center;
+    background-color:#454d47;
     padding: 90px 0;
     position: relative;
 }
@@ -990,14 +990,14 @@ How it works section
     position: absolute;
     right: 20px;
     top: -30px;
-    background: url(../images/peanuts.png);
+    background:none;
     width: 150px;
     height: 51px;
     content: "";
 }
 
 .how-it-works .text-xs-center>h2 {
-    color: #d8bea5;
+    color: #f7f2ed;
     margin-bottom: 50px;
 }
 
@@ -1020,8 +1020,8 @@ How it works section
 }
 
 .how-it-works p.pay-info {
-    font-size: 16px;
-    color: #d8bea5;
+    font-size: 20px;
+    color: #e9f2f8;
     margin-top: 25px;
     text-align: center;
 }
@@ -1160,7 +1160,7 @@ Steps
     position: absolute;
     top: -81px;
     left: 50px;
-    background: url(../images/chilly.png);
+    background:none;
     width: 103px;
     height: 151px;
     content: "";
