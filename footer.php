@@ -10,7 +10,7 @@
                         <h5>About Us</h5>
                         <a href="#"> <img src="images/orfos-logo.png" alt="Footer logo"> </a>
                         <p> This is a wonderful Online Restaurant Food Ordering System where you can seach food and order in online by cash on delivery </p>
-                        <span>Choose it &amp; Enjoy your meals! </span>
+                        <p>Choose it &amp; Enjoy your meals! </p>
                     </div>
 
                     <div class="col-xs-12 col-sm-3">

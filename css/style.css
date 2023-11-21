@@ -88,6 +88,7 @@ hr {
 *===================================*/
 
 .container {
+    padding-top: 10px;
     max-width: 1270px;
     width: 94%;
 }
@@ -112,7 +113,7 @@ hr {
 *===================================*/
 
 .page-wrapper {
-    padding-top: 68px;
+    padding-top: 31px;
     /* Used for inpper pages if navigation fixed to the top */
 }
 
@@ -373,7 +374,7 @@ hr {
 
 .navbar {
     background-color: rgb(196, 120, 7);
-    padding: .95rem 1rem;
+    padding:3px 1rem;
     border-radius: 0;
     
 }
@@ -442,8 +443,9 @@ hr {
 /********* top links part ***********/
 
 .top-links {
-    padding: 15px 0;
-    border-bottom: 1px solid #eaebeb;
+    padding:5px 0;
+    background-color: rgb(228, 223, 238);
+    border-bottom: 1px solid #eaeaeb;
 }
 
 .top-links ul {
@@ -2082,7 +2084,7 @@ a[aria-expanded=false] .fa-angle-down {
 }
 
 .restaurant-entry .entry-dscr ul li {
-    font-size: 12px;
+    font-size: 12px;restaurant-entry
     margin-top: 7px;
 }
 
