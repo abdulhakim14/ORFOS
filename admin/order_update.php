@@ -36,8 +36,8 @@ window.print();
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/foodpicky.png">
-    <title>FoodPicky - Admin Dashboard</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/orfos.png">
+    <title>ORFOS - Admin Dashboard</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -170,12 +170,6 @@ td, th {
 	   
       <input name="Submit2" type="submit"  class="btn btn-danger"  value="Close this window " onClick="return f2();" style="cursor: pointer;"  /></td>
     </tr>
-
-
-
-     
-   
-   
 
  
 </table>

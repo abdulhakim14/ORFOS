@@ -114,8 +114,8 @@ if(isset($_POST['submit']))           //if upload btn is pressed
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-	<link rel="icon" type="image/png" sizes="16x16" href="images/foodpicky.png">
-    <title>FoodPicky - Admin Dashboard</title>
+	<link rel="icon" type="image/png" sizes="16x16" href="images/orfos.png">
+    <title>ORFOS - Admin Dashboard</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->

@@ -4,6 +4,10 @@
             <nav class="navbar top-navbar navbar-expand-md navbar-light">             
                 <div class="navbar-header">
                     <a class="navbar-brand" href="dashboard.php">
+                        <!-- Logo icon -->
+                        <b><img src="images/foodpicky.png" alt="homepage" class="dark-logo" width = "25px"/></b>
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
                         <span><b>ORFOS</b></span>
                     </a>
                 </div>
