@@ -49,10 +49,12 @@ else{
     <link href="css/animate.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet"> </head>
+    <link href="css/style.css" rel="stylesheet"> 
+
+</head>
 <body>
     
-    <div class="site-wrapper">
+   
 
          <!--header starts-->
 
@@ -63,24 +65,27 @@ else{
          <!--header End-->
 
         <div class="page-wrapper">
-            <div class="top-links">
+        
+            <!-- top Links -->
+            <div class="top-link">
                 <div class="container">
                     <ul class="row links">
-                      
-                        <li class="col-xs-12 col-sm-4 link-item"><span>1</span><a href="restaurants.php">Choose Restaurant</a></li>
-                        <li class="col-xs-12 col-sm-4 link-item "><span>2</span><a href="#">Pick your favourite dishes</a></li>
-                        <li class="col-xs-12 col-sm-4 link-item active" ><span>3</span><a href="checkout.php">Get delivered & Pay</a></li>
+                       
+                        <li class="col-xs-12 col-sm-4 link-item "><span>1</span><a href="restaurants.php">Choose Restaurant</a></li>
+                        <li class="col-xs-12 col-sm-4 link-item"><span>2</span><a href="#">Pick your favourite dishes</a></li>
+                        <li class="col-xs-12 col-sm-4 link-item active"><span>3</span><a href="#">Get delivered & Pay</a></li>
                     </ul>
                 </div>
             </div>
+            <!-- end:Top links -->
 			
-                <div class="container">
+            <div class="container">
                  
-					   <span style="color:green;">
-							<?php echo $success; ?>
-						</span>
+				<span style="color:green;">
+					<?php echo $success; ?>
+				</span>
 					
-                </div>
+            </div>
             
 			
 			
@@ -144,20 +149,19 @@ else{
                 </div>
 			</form>
             </div>
-
+        
         </div>
         <!-- end:page wrapper -->
                    
         <!-- start: FOOTER -->
 
             <?php
-            include("./footer.php");
+            include("footer.php");
             ?>
         
         <!-- end:Footer -->
     
-    </div>
-    <!-- end:site wrapper -->
+
 
      <!-- Bootstrap core JavaScript
     ================================================== -->

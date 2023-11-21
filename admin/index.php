@@ -94,7 +94,7 @@ if(isset($_POST['submit1'] ))
 
 <head>
   <meta charset="UTF-8">
-  <title>Food Picky Adm-Login</title>
+  <title>ORFOS Admin-Login</title>
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
@@ -112,7 +112,7 @@ if(isset($_POST['submit1'] ))
   
 <div class="container">
   <div class="info">
-    <h1>Food Picky</h1><span>Admin login page</span>
+    <h1>ORFOS</h1><span>Admin login page</span>
   </div>
 </div>
 <div class="form">
