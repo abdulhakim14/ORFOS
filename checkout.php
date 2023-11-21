@@ -53,40 +53,15 @@ else{
 <body>
     
     <div class="site-wrapper">
-        <!--header starts-->
-        <header id="header" class="header-scroll top-header headrom">
-            <!-- .navbar -->
-            <nav class="navbar navbar-dark">
-                <div class="container">
-                    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">&#9776;</button>
-                    <a class="navbar-brand" href="index.php"> <img class="img-rounded" src="images/food-picky-logo.png" alt=""> </a>
-                    <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item"> <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
-                            <li class="nav-item"> <a class="nav-link active" href="restaurants.php">Restaurants <span class="sr-only"></span></a> </li>
-                            
-							<?php
-						if(empty($_SESSION["user_id"]))
-							{
-								echo '<li class="nav-item"><a href="login.php" class="nav-link active">Login</a> </li>
-							  <li class="nav-item"><a href="registration.php" class="nav-link active">Sign Up</a> </li>';
-							}
-						else
-							{
-									
-									
-										echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">Your Orders</a> </li>';
-									echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">LogOut</a> </li>';
-							}
 
-						?>
-							 
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- /.navbar -->
-        </header>
+         <!--header starts-->
+
+            <?php
+            include("header.php");
+            ?>
+
+         <!--header End-->
+
         <div class="page-wrapper">
             <div class="top-links">
                 <div class="container">
@@ -102,8 +77,8 @@ else{
                 <div class="container">
                  
 					   <span style="color:green;">
-								<?php echo $success; ?>
-										</span>
+							<?php echo $success; ?>
+						</span>
 					
                 </div>
             
@@ -125,31 +100,31 @@ else{
                                         <div class="cart-totals-fields">
 										
                                             <table class="table">
-											<tbody>
-                                          
-												 
-											   
-                                                    <tr>
-                                                        <td>Cart Subtotal</td>
-                                                        <td><?php echo $item_total; ?> Tk</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Shipping &amp; Handling</td>
-                                                        <td>FREE*</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-color"><strong>Total</strong></td>
-                                                        <td class="text-color"><strong><?php echo $item_total; ?> Tk</strong></td>
-                                                    </tr>
+                                                <tbody>
+                                            
+                                                    
+                                                
+                                                        <tr>
+                                                            <td>Cart Subtotal</td>
+                                                            <td><?php echo $item_total; ?> Tk</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Shipping &amp; Handling</td>
+                                                            <td>FREE*</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-color"><strong>Total</strong></td>
+                                                            <td class="text-color"><strong><?php echo $item_total; ?> Tk</strong></td>
+                                                        </tr>
                                                 </tbody>
-												
-												
-												
-												
+											
                                             </table>
                                         </div>
+                                        </div>
                                     </div>
+
                                     <!--cart summary-->
+
                                     <div class="payment-option">
                                         <ul class=" list-unstyled">
                                             <li>
@@ -157,50 +132,22 @@ else{
                                                     <input name="mod" id="radioStacked1" checked value="COD" type="radio" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description">Cash on delivery</span>
                                                     </label>
                                             </li>
-                                            <li>
-                                                <label class="custom-control custom-radio  m-b-10">
-                                                    <input name="mod"  type="radio" value="paypal" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description">Credit Card<img src="images/paypal.jpg" alt="" width="90"></span> </label>
-                                            </li>
+                                            
                                         </ul>
                                         <p class="text-xs-center"> <input type="submit" onclick="return confirm('Are you sure?');" name="submit"  class="btn btn-outline-success btn-block" value="Order now"> </p>
                                     </div>
-									</form>
+								
                                 </div>
                             </div>
-                       
+                        </form>
                     </div>
                 </div>
-				 </form>
+			</form>
             </div>
-                    <section class="app-section">
-            <div class="app-wrap">
-                <div class="container">
-                    <div class="row text-img-block text-xs-left">
-                        <div class="container">
-                            <div class="col-xs-12 col-sm-5 right-image text-center">
-                                <figure> <img src="images/app.png" alt="Right Image" class="img-fluid"> </figure>
-                            </div>
-                            <div class="col-xs-12 col-sm-7 left-text">
-                                <h3>Food Picky - The Best Food Delivery App</h3>
-                                <p>Got Hungry? Get the food you want, from the restaurants you love, delivered at blinking speed.
 
-								Eat what you like, where you like, when you like. Find the local flavours you crave, all at the tap of a button.</p>
-                                <div class="social-btns">
-                                    <a href="#" class="app-btn apple-button clearfix">
-                                        <div class="pull-left"><i class="fa fa-apple"></i> </div>
-                                        <div class="pull-right"> <span class="text">Available on the</span> <span class="text-2">App Store</span> </div>
-                                    </a>
-                                    <a href="#" class="app-btn android-button clearfix">
-                                        <div class="pull-left"><i class="fa fa-android"></i> </div>
-                                        <div class="pull-right"> <span class="text">Available on the</span> <span class="text-2">Play Store</span> </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
+        <!-- end:page wrapper -->
+                   
         <!-- start: FOOTER -->
 
             <?php
@@ -208,9 +155,9 @@ else{
             ?>
         
         <!-- end:Footer -->
-        </div>
-        <!-- end:page wrapper -->
-         </div>
+    
+    </div>
+    <!-- end:site wrapper -->
 
      <!-- Bootstrap core JavaScript
     ================================================== -->

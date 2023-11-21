@@ -166,8 +166,8 @@ include_once 'product-action.php'; //including controller
                               <i class="fa fa-angle-right pull-right"></i>
                               <i class="fa fa-angle-down pull-right"></i>
                               </a>
-                           </h3>
-                                <div class="clearfix"></div>
+                            </h3>
+                            <div class="clearfix"></div>
                             </div>
                             <div class="collapse in" id="popular2">
 						        <?php  // display values and item of food/dishes
