@@ -282,18 +282,20 @@ only screen and (max-width: 760px),
                         </div>
                     </div>
                 </div>
-          
-
-                <!-- start: FOOTER -->
-
-                    <?php
-                    include("footer.php");
-                    ?>
-            
-                <!-- end:Footer -->
+                
             </section>
 
         </div>
+
+         <!-- start: FOOTER -->
+
+            <?php
+                    include("footer.php");
+                    ?>
+            
+        <!-- end:Footer -->
+
+
   
     <!-- Bootstrap core JavaScript
     ================================================== -->
