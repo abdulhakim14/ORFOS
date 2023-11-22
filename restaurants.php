@@ -97,6 +97,7 @@ session_start();
                 </div>
                 </div>
             </section>
+        </div>
                    
 
             <!-- start: FOOTER -->

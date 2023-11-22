@@ -90,12 +90,12 @@ session_start(); //start temp session until logout/browser closed
 				
 				
 						<?php 
-						// fetch records from database to display popular first 8 dishes from table
-						$query_res= mysqli_query($db,"select * from dishes LIMIT 8"); 
+						// fetch records from database to display popular first 12 dishes from table
+						$query_res= mysqli_query($db,"select * from dishes LIMIT 12"); 
 									      while($r=mysqli_fetch_array($query_res))
 										  {
 													
-						                       echo '  <div class="col-xs-12 col-sm-6 col-md-3 food-item">
+						                       echo '  <div class="col-xs-12 col-sm-6 col-md-4 food-item">
 														<div class="food-item-wrap">
 															<div class="figure-wrap bg-image" data-image-src="admin/Res_img/dishes/'.$r['img'].'">
 															</div>
@@ -107,7 +107,7 @@ session_start(); //start temp session until logout/browser closed
 															</div>
 															
 														</div>
-												</div>';
+												      </div>';
 													
 										  }
 						
