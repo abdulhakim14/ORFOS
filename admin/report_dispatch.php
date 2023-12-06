@@ -72,7 +72,15 @@ session_start();
                        
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">All Delivered Reports</h4>
+                                <h4 class="card-title">Dispatch Reports</h4>
+                                <div class="text-right">
+                                
+                                    <h5>Total Dispatch Orders: <?php $sql="select * FROM users_orders WHERE status IS NULL";
+                                        $result=mysqli_query($db,$sql); 
+                                            $rws=mysqli_num_rows($result);
+                                            
+                                            echo $rws;?></h5>
+                                </div>
                              
                                 <div class="table-responsive m-t-40">
                                     <table id="myTable" class="table table-bordered table-striped">

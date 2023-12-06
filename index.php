@@ -44,7 +44,7 @@ session_start(); //start temp session until logout/browser closed
                     <div class="banner-form">
                         <form class="form-inline">
                             <div class="form-group">
-                                <label class="sr-only" for="exampleInputAmount">I would like to eat....</label>
+                               
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-lg" id="exampleInputAmount" placeholder="Search restaurant"> </div>
                             </div>

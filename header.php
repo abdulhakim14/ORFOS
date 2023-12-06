@@ -3,7 +3,7 @@
 
         <header id="header" class="header-scroll top-header headrom">
             <!-- .navbar -->
-            <nav class="navbar navbar-dark">
+            <nav class="navbar navbar-dark d-flex">
                 <div class="container">
                     <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">&#9776;</button>
                     <a class="navbar-brand" href="index.php"> <strong>ORFOS</strong> </a>
