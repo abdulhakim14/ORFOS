@@ -111,7 +111,7 @@ session_start();
                                                                                 <td>'.$rows['username'].'</td>
                                                                                 <td>'.$rows['title'].'</td>
                                                                                 <td>'.$rows['quantity'].'</td>
-                                                                                <td>&#8377; '.$rows['price'].'</td>
+                                                                                <td>'.$rows['price'].' Tk</td>
                                                                                 <td>'.$rows['address'].'</td>';
                                                                     ?>
                                                                     <?php 
