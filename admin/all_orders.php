@@ -84,8 +84,8 @@ session_start();
                                                 <th>Price</th>
 												<th>Address</th>
 												<th>Status</th>												
-												 <th>Ordered Date</th>
-												  <th>Action</th>
+												<th>Ordered Date</th>
+												<th>Action</th>
 												 
                                             </tr>
                                         </thead>

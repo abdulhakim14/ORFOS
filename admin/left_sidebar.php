@@ -16,7 +16,7 @@
                             </ul>
                         </li>
                         
-                        <li> <a class="has-arrow  " href="#" aria-expanded="false">  <span><i class="fa fa-user f-s-20 "></i></span><span class="hide-menu">Users</span></a>
+                        <li> <a class="has-arrow  " href="#" aria-expanded="false">  <span><i class="fa fa-users f-s-20 "></i></span><span class="hide-menu">Users</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="allusers.php">All Users</a></li>
 								<li><a href="add_users.php">Add Users</a></li>
@@ -24,7 +24,7 @@
                                
                             </ul>
                         </li>
-                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Restaurants</span></a>
+                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-home f-s-20 color-warning"></i><span class="hide-menu">Restaurants</span></a>
                             <ul aria-expanded="false" class="collapse">
 								<li><a href="allrestraunt.php">All Restaurants</a></li>
 								<li><a href="add_category.php">Add Category</a></li>
@@ -46,13 +46,13 @@
 								  
                             </ul>
                         </li>
-                        
+
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-file" aria-hidden="true"></i><span class="hide-menu">Reports</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="report_delivered.php">Delivered</a></li>
                                 <li><a href="report_dispatch.php">Dispatch</a></li>
-                                <li><a href="report_cancel.php">Cancel</a></li>
                                 <li><a href="report_ontheway.php">On the Way</a></li>
+								<li><a href="report_delivered.php">Delivered</a></li>
+                                <li><a href="report_cancel.php">Cancel</a></li>
 								  
                             </ul>
                         </li>
