@@ -76,7 +76,6 @@ session_start();
 						     <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">All Registered Restaurants</h4>
-                                <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
 								
                                 <div class="table-responsive m-t-40">
                                     <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
@@ -230,7 +229,7 @@ session_start();
     <script src="js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
     <script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
     <script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
-    <script src="js/lib/datatables/datatables-init.js"></script>
+     <!-- <script src="js/lib/datatables/datatables-init.js"></script> -->
 </body>
 
 </html>
