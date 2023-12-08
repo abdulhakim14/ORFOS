@@ -105,7 +105,7 @@ if(isset($_POST['submit'] ))
 <![endif]-->
 </head>
 
-<body class="fix-header">
+<body class="fix-header fix-sidebar">
     <!-- Preloader - style you can find in spinners.css -->
     <div class="preloader">
         <svg class="circular" viewBox="25 25 50 50">
@@ -130,7 +130,7 @@ if(isset($_POST['submit'] ))
 
 
         <!-- Page wrapper  -->
-        <div class="page-wrapper" style="height:1200px;">
+        <div class="page-wrapper">
             <!-- Bread crumb -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">

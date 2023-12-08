@@ -128,8 +128,8 @@ session_start();
 																								<td>'.$rows['price'].' Tk</td>
 																								
 																								
-																								<td><div class="col-md-3 col-lg-8 m-b-10">
-																								<center><img src="Res_img/dishes/'.$rows['img'].'" class="img-responsive  radius" style="max-height:100px;max-width:150px;" /></center>
+																								<td><div class="col-md-3 col-lg-8">
+																								<center><img src="Res_img/dishes/'.$rows['img'].'" class="img-responsive  radius" style="max-height:300px;max-width:300px;" /></center>
 																								</div></td>
 																								
 																							

@@ -128,53 +128,51 @@ td, th {
 
 <body>
 
-<div style="margin-left:50px;">
- <form name="updateticket" id="updatecomplaint" method="post"> 
- 
- 
- 
- 
-<table  border="0" cellspacing="0" cellpadding="0">
-     <tr >
-      <td><b>Order Number</b></td>
-      <td><?php echo htmlentities($_GET['form_id']); ?></td>
-    </tr>
-	<tr>
-      <td  >&nbsp;</td>
-
-      <td >&nbsp;</td>
-    </tr>
-   
-    <tr >
-      <td><b>Status</b></td>
-      <td><select name="status" required="required" >
-      <option value="">Select Status</option>
-      <option value="in process">In Process</option>
-    <option value="closed">Delivered</option>
-	 <option value="rejected">Rejected</option>
+      <div style="margin-left:50px;">
+        <form name="updateticket" id="updatecomplaint" method="post"> 
         
-      </select></td>
-    </tr>
+        
+        <table  border="0" cellspacing="0" cellpadding="0">
+            <tr >
+              <td><b>Order Number</b></td>
+              <td><?php echo htmlentities($_GET['form_id']); ?></td>
+            </tr>
+            <tr>
+              <td  >&nbsp;</td>
+
+              <td >&nbsp;</td>
+            </tr>
+          
+            <tr >
+              <td><b>Status</b></td>
+              <td><select name="status" required="required" >
+              <option value="">Select Status</option>
+              <option value="in process">In Process</option>
+              <option value="closed">Delivered</option>
+              <option value="rejected">Rejected</option>
+                
+              </select></td>
+            </tr>
 
 
-      <tr >
-      <td><b>Remarks</b></td>
-      <td><textarea name="remark" cols="50" rows="10" required="required"></textarea></td>
-    </tr>
-    
+            <!--   <tr >
+              <td><b>Remarks</b></td>
+              <td><textarea name="remark" cols="50" rows="10" required="required"></textarea></td>
+            </tr>  -->
+            
 
 
-        <tr>
-      <td><b>Action</b></td>
-      <td><input type="submit" name="update"  class="btn btn-primary" value="Submit">
-	   
-      <input name="Submit2" type="submit"  class="btn btn-danger"  value="Close this window " onClick="return f2();" style="cursor: pointer;"  /></td>
-    </tr>
+            <tr>
+              <td><b>Action</b></td>
+              <td><input type="submit" name="update"  class="btn btn-primary" value="Submit">
+            
+              <input name="Submit2" type="submit"  class="btn btn-danger"  value="Close this window " onClick="return f2();" style="cursor: pointer;"  /></td>
+            </tr>
 
- 
-</table>
- </form>
-</div>
+        
+        </table>
+        </form>
+      </div>
 
 </body>
 </html>

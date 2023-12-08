@@ -187,6 +187,7 @@ session_start();
         <!-- End Page wrapper  -->
     </div>
     <!-- End Wrapper -->
+    
     <!-- All Jquery -->
     <script src="js/lib/jquery/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
