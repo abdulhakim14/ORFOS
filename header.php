@@ -1,5 +1,3 @@
-<!--header starts-->
-
 
         <header id="header" class="header-scroll top-header headrom">
             <!-- .navbar -->
@@ -36,6 +34,3 @@
             </nav>
             <!-- /.navbar -->
         </header>
-
-
-<!--header End-->

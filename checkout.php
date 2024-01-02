@@ -56,22 +56,21 @@ else{
     
    
 
-         <!--header starts-->
+         <!-- header starts -->
 
-            <?php
+         <?php
             include("header.php");
             ?>
 
-         <!--header End-->
+         <!-- header End -->>
 
         <div class="page-wrapper">
-        
             <!-- top Links -->
-            <div class="top-link">
+            <div class="top-links">
                 <div class="container">
                     <ul class="row links">
                        
-                        <li class="col-xs-12 col-sm-4 link-item "><span>1</span><a href="restaurants.php">Choose Restaurant</a></li>
+                        <li class="col-xs-12 col-sm-4 link-item"><span>1</span><a href="restaurants.php">Choose Restaurant</a></li>
                         <li class="col-xs-12 col-sm-4 link-item"><span>2</span><a href="#">Pick your favourite dishes</a></li>
                         <li class="col-xs-12 col-sm-4 link-item active"><span>3</span><a href="#">Get delivered & Pay</a></li>
                     </ul>
