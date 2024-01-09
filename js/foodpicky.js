@@ -1,11 +1,4 @@
-/*!
- * Foodpicky HTML template V 1.0
- * A simple and easy to use HTML template designed for online food ordering.
- * http://codenpixel.com
- * Author : codenpixel (http://codenpixel.com/)
- */
-
-/* 
+/*
 *  Table of content 
 *************************************
 *   Loading animation seetings
@@ -61,7 +54,9 @@ $(document).ready(function() {
     
     
     // initialise
+
     headroom.init();
+    
     ////////Packages filter
     var $container = $(".restaurant-listing");
     $container.isotope({
@@ -72,6 +67,7 @@ $(document).ready(function() {
             queue: false,
         }
     });
+
 
     /////// Isotope 
     $("nav.primary ul a").click(function() {

@@ -1759,9 +1759,9 @@ footer li a {
 }
 
 .widget-heading .widget-title {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
-    float: left;
+    text-align: center;
     margin-top: 0;
     margin-bottom: 0;
     width: 100%;

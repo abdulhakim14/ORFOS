@@ -20,7 +20,7 @@
 						else
 							{
 									//if user is login
-									
+									echo  '<li class="nav-item"><a href="cart.php" class="nav-link active">Your Cart</a> </li>';
 									echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">Your Orders</a> </li>';
 									echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">Logout</a> </li>';
 							}
