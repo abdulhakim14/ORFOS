@@ -178,9 +178,9 @@ include_once 'product-action.php'; //including controller
 									{
 									foreach($products as $product)
 										{
-						
-					 
-													 ?>
+						                 ?>
+
+                                         
                                 <div class="food-item">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-lg-8">
@@ -197,9 +197,9 @@ include_once 'product-action.php'; //including controller
                                         </div>
                                         <!-- end:col -->
                                         <div class="col-xs-12 col-sm-12 col-lg-4 pull-right item-cart-info"> 
-										<span class="price pull-left" ><?php echo $product['price']; ?> Tk</span>
-										  <input class="b-r-0" type="number" min="1" name="quantity"  style="margin-left:30px; width: 50px;" value="1" size="2" />
-										  <input type="submit" class="btn theme-btn" style="margin-left:40px;" value="Add to cart" />
+										<span class="price pull-left m-b-2" ><?php echo $product['price']; ?> Tk</span>
+										  <input class="b-r-0 pull-right" type="number" min="1" name="quantity"  style="margin-right:5px; width: 40px;" value="1" size="2" />
+										  <input type="submit" class="btn theme-btn pull-right" style="margin-left:5px; " value="Add to cart" />
 										</div>
 										</form>
                                     </div>

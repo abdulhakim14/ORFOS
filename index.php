@@ -40,17 +40,9 @@ session_start(); //start temp session until logout/browser closed
             <div class="hero-inner">
                 <div class="container text-center hero-text font-white">
                     <h1>Choose it & Enjoy your meals! </h1>
-                    <h5 class="font-white space-xs">Find the popular restaurants</h5>
-                    <div class="banner-form">
-                        <form class="form-inline">
-                            <div class="form-group">
-                               
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-lg" id="exampleInputAmount" placeholder="Search restaurant"> </div>
-                            </div>
-                            <button onclick="location.href='restaurants.php'" type="button" class="btn theme-btn btn-lg">Search</button>
-                        </form>
-                    </div>
+                    <h5 class="font-white space-xs"></h5>
+                    <h5 class="font-white space-xs"></h5>
+                   
                     <div class="steps">
 
                         <div class="step-item step1">                           
@@ -90,8 +82,8 @@ session_start(); //start temp session until logout/browser closed
 				
 				
 						<?php 
-						// fetch records from database to display popular first 12 dishes from table
-						$query_res= mysqli_query($db,"select * from dishes LIMIT 12"); 
+						// fetch records from database to display popular first 9 dishes from table
+						$query_res= mysqli_query($db,"select * from dishes LIMIT 9"); 
 									      while($r=mysqli_fetch_array($query_res))
 										  {
 													
@@ -176,6 +168,7 @@ session_start(); //start temp session until logout/browser closed
             </div>
         </section>
         <!-- How it works block ends -->
+        
 
         <!-- Featured restaurants starts -->
         <section class="featured-restaurants">
