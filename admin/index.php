@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" >
+
 <?php
 include("../connection/connect.php");
 error_reporting(0);
 session_start();
+
 if(isset($_POST['submit']))
 {
 	$username = $_POST['username'];
@@ -98,11 +100,11 @@ if(isset($_POST['submit1'] ))
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
-  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
-<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
-<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+  	<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
+	<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
 
-      <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/login.css">
 
   
 </head>
@@ -115,26 +117,30 @@ if(isset($_POST['submit1'] ))
     <h5>Admin login page</h5>
   </div>
 </div>
+
 <div class="form">
   <div class="thumbnail"><img src="images/manager.png"/></div>
   
-  <form class="register-form" action="index.php" method="post">
-    <input type="text" placeholder="Username" name="cr_user"/>
-    <input type="text" placeholder="Email address"  name="cr_email"/>
-	 <input type="password" placeholder="Password"  name="cr_pass"/>
-	  <input type="password" placeholder="Confirm password"  name="cr_cpass"/>
-	  <input type="password" placeholder="Unique-Code"  name="code"/>
-   <input type="submit"  name="submit1" value="Create" />
-    <p class="message">Already registered? <a href="#">Sign In</a></p>
-  </form>
-  <span style="color:red;"><?php echo $message; ?></span>
-   <span style="color:green;"><?php echo $success; ?></span>
-  <form class="login-form" action="index.php" method="post">
-    <input type="text" placeholder="username" name="username"/>
-    <input type="password" placeholder="password" name="password"/>
-    <input type="submit"  name="submit" value="Login" />
-    <p class="message">Not registered? <a href="#">Create an account</a></p>
-  </form>
+	<form class="register-form" action="index.php" method="post">
+			<input type="text" placeholder="Username" name="cr_user"/>
+			<input type="text" placeholder="Email address"  name="cr_email"/>
+			<input type="password" placeholder="Password"  name="cr_pass"/>
+			<input type="password" placeholder="Confirm password"  name="cr_cpass"/>
+			<input type="password" placeholder="Unique-Code"  name="code"/>
+			<input type="submit"  name="submit1" value="Create" />
+			<p class="message">Already registered? <a href="#">Sign In</a></p>
+		
+	</form>
+	
+	<span style="color:red;"><?php echo $message; ?></span>
+	<span style="color:green;"><?php echo $success; ?></span>
+
+	<form class="login-form" action="index.php" method="post">
+			<input type="text" placeholder="username" name="username"/>
+			<input type="password" placeholder="password" name="password"/>
+			<input type="submit"  name="submit" value="Login" />
+			<p class="message">Not registered? <a href="#">Create an account</a></p>
+	</form>
   
 </div>
 
