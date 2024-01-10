@@ -8,7 +8,7 @@ include("connection/connect.php"); // connection
 if(isset($_POST['submit'] )) //if submit btn is pressed
 {
      if(empty($_POST['firstname']) ||  //fetching and find if its empty
-   	    empty($_POST['lastname'])|| 
+   	empty($_POST['lastname'])|| 
 		empty($_POST['email']) ||  
 		empty($_POST['phone'])||
 		empty($_POST['password'])||
@@ -19,58 +19,45 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
 		}
 	else
 	{
-		//cheching username & email if already present
-	$check_username= mysqli_query($db, "SELECT username FROM users where username = '".$_POST['username']."' ");
-	$check_email = mysqli_query($db, "SELECT email FROM users where email = '".$_POST['email']."' ");
-		
+		//checking username & email if already present
+      $check_username= mysqli_query($db, "SELECT username FROM users where username = '".$_POST['username']."' ");
+      $check_email = mysqli_query($db, "SELECT email FROM users where email = '".$_POST['email']."' ");
+         
 
-	
-	if($_POST['password'] != $_POST['cpassword']){  //matching passwords
-       	$message = "Password not match";
-    }
-	elseif(strlen($_POST['password']) < 6)  //cal password length
-	{
-		$message = "Password Must be >=6";
-	}
-	elseif(strlen($_POST['phone']) < 11)  //cal phone length
-	{
-		$message = "invalid phone number!";
-	}
+      
+      if($_POST['password'] != $_POST['cpassword']){  //matching passwords
+            $message = "Password not match";
+      }
+      elseif(strlen($_POST['password']) < 6)  //cal password length
+      {
+         $message = "Password Must be >=6";
+      }
+      elseif(strlen($_POST['phone']) < 11)  //cal phone length
+      {
+         $message = "invalid phone number!";
+      }
 
-    elseif (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) // Validate email address
-    {
-       	$message = "Invalid email address please type a valid email!";
-    }
-	elseif(mysqli_num_rows($check_username) > 0)  //check username
-     {
-    	$message = 'username Already exists!';
-     }
-	elseif(mysqli_num_rows($check_email) > 0) //check email
-     {
-    	$message = 'Email Already exists!';
-     }
-	else{
-       
-	 //inserting values into db
-	$mql = "INSERT INTO users(username,f_name,l_name,email,phone,password,address) VALUES('".$_POST['username']."','".$_POST['firstname']."','".$_POST['lastname']."','".$_POST['email']."','".$_POST['phone']."','".md5($_POST['password'])."','".$_POST['address']."')";
-	mysqli_query($db, $mql);
-		$success = "Account Created successfully! <p>You will be redirected in <span id='counter'>5</span> second(s).</p>
-														<script type='text/javascript'>
-														function countdown() {
-															var i = document.getElementById('counter');
-															if (parseInt(i.innerHTML)<=0) {
-																location.href = 'login.php';
-															}
-															i.innerHTML = parseInt(i.innerHTML)-1;
-														}
-														setInterval(function(){ countdown(); },1000);
-														</script>'";
-		
-		
-		
-		
-		 header("refresh:5;url=login.php"); // redireted once inserted success
-    }
+      elseif (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) // Validate email address
+      {
+            $message = "Invalid email address please type a valid email!";
+      }
+      elseif(mysqli_num_rows($check_username) > 0)  //check username
+      {
+         $message = 'username Already exists!';
+      }
+      elseif(mysqli_num_rows($check_email) > 0) //check email
+      {
+         $message = 'Email Already exists!';
+      }
+      else{
+         
+         //inserting values into db
+         $mql = "INSERT INTO users(username,f_name,l_name,email,phone,password,address) VALUES('".$_POST['username']."','".$_POST['firstname']."','".$_POST['lastname']."','".$_POST['email']."','".$_POST['phone']."','".md5($_POST['password'])."','".$_POST['address']."')";
+         mysqli_query($db, $mql);
+            $success = "Account Created successfully";
+            header("refresh:1;url=login.php"); // redireted once inserted success
+            
+      }
 	}
 
 }
@@ -123,6 +110,7 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
                    </ul>
                </div>
             </div>
+
             <section class="contact-page inner-page">
                <div class="container">
                   <div class="row">
@@ -133,7 +121,7 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
                               
 							  <form action="" method="post">
                                  <div class="row">
-								  <div class="form-group col-sm-12">
+								            <div class="form-group col-sm-12">
                                        <label for="exampleInputEmail1">User Name</label>
                                        <input class="form-control" type="text" name="username" id="example-text-input" placeholder="UserName"> 
                                     </div>
@@ -155,13 +143,13 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
                                     </div>
                                     <div class="form-group col-sm-6">
                                        <label for="exampleInputPassword1">Password</label>
-                                       <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password"> 
+                                       <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password"> <small class="form-text text-muted"> >=6  </small>
                                     </div>
                                     <div class="form-group col-sm-6">
-                                       <label for="exampleInputPassword1">Repeat password</label>
-                                       <input type="password" class="form-control" name="cpassword" id="exampleInputPassword2" placeholder="Password"> 
+                                       <label for="exampleInputPassword1">Confirm password</label>
+                                       <input type="password" class="form-control" name="cpassword" id="exampleInputPassword2" placeholder="Password"> <small class="form-text text-muted"> >=6  </small>
                                     </div>
-									 <div class="form-group col-sm-12">
+									         <div class="form-group col-sm-12">
                                        <label for="exampleTextarea">Delivery Address</label>
                                        <textarea class="form-control" id="exampleTextarea"  name="address" rows="3"></textarea>
                                     </div>
