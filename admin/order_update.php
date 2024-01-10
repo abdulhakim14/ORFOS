@@ -97,7 +97,7 @@ label.control-label {
 
 
 table { 
-	width: 650px; 
+	width: 500px; 
 	border-collapse: collapse; 
 	margin: auto;
 	margin-top:50px;
@@ -128,7 +128,7 @@ td, th {
 
 <body>
 
-      <div style="margin-left:50px;">
+      <div style="margin:20px;">
         <form name="updateticket" id="updatecomplaint" method="post"> 
         
         
@@ -149,7 +149,7 @@ td, th {
               <option value="">Select Status</option>
               <option value="in process">In Process</option>
               <option value="closed">Delivered</option>
-              <option value="rejected">Rejected</option>
+              <option value="rejected">Cancel</option>
                 
               </select></td>
             </tr>

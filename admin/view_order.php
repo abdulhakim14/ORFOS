@@ -118,13 +118,13 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 														<button type="button" class="btn btn-primary">View User Details</button></a>
 											
 													   </center></td>
+                                                      
 												   																								
 											</tr>	
 											<tr>
 													<td><strong>Quantity:</strong></td>
 												    <td><center><?php echo $rows['quantity']; ?></center></td>
-													  
-												   																							
+													  																			
 											</tr>
 											<tr>
 													<td><strong>Price:</strong></td>
