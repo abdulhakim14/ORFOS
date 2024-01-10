@@ -72,7 +72,7 @@ session_start();
 													<div class="col-sm-6 col-md-6 col-lg-6 text-xs-center">
 															<div class="right-content bg-white">
 																<div class="right-review">
-																	<a href="dishes.php?res_id='.$rows['rs_id'].'" class="btn theme-btn-dash">View Menu</a> 
+																	<a href="dishes.php?res_id='.$rows['rs_id'].'" class="btn btn-danger active">View Menu</a> 
                                                                 </div>
 															</div>
 															<!-- end:right info -->
