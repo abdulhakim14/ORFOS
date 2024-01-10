@@ -102,7 +102,7 @@ label.control-label {
 
 
 table { 
-	width: 650px; 
+	width: 500px; 
 	border-collapse: collapse; 
 	margin: auto;
 	margin-top:50px;
@@ -133,7 +133,7 @@ td, th {
 
 <body>
 
-<div style="margin-left:50px;">
+<div style="margin:20px;">
  <form name="updateticket" id="updatecomplaint" method="post"> 
  
  
@@ -155,7 +155,7 @@ while($row=mysqli_fetch_array($ret2))
   
 		
     <tr>
-      <td colspan="2"><b><?php echo $row['f_name'];?>'s profile</b></td>
+      <td colspan="2"><center><b><?php echo $row['f_name'];?>  profile</b></center></td>
       
     </tr>
     
