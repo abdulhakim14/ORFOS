@@ -134,7 +134,7 @@ else
 																								<td>'.$rows['price'].' Tk</td>
 																								
 																								
-																								<td><div class="col-md-3 col-lg-8">
+																								<td><div >
 																								<center><img src="Res_img/dishes/'.$rows['img'].'" class="img-responsive  radius" style="max-height:300px;max-width:300px;" /></center>
 																								</div></td>
 																								
