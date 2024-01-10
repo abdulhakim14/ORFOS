@@ -6,6 +6,12 @@ error_reporting(0);
 session_start();
 
 include_once 'cart-action.php'; //including controller
+if(empty($_SESSION['user_id']))  //if usser is not login redirected back to login page
+{
+	header('location:login.php');
+}
+else
+{
 
 ?>
 
@@ -146,3 +152,7 @@ include_once 'cart-action.php'; //including controller
 </body>
 
 </html>
+
+<?php
+}
+?>
