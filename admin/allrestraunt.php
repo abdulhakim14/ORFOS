@@ -47,14 +47,14 @@ else
 
         <!-- Start header header  -->
             <?php
-            include("./header.php");
+            include("header.php");
             ?>
         <!-- End header header -->
 
 
         <!--Start Left Sidebar  -->
             <?php
-            include("./left_sidebar.php");
+            include("left_sidebar.php");
             ?>
         <!-- End Left Sidebar  -->
 
@@ -64,7 +64,7 @@ else
             <!-- Bread crumb -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary">All Restaurants Info</h3> </div>
+                    <h3 class="text-primary">Restaurants</h3> </div>
                
             </div>
             <!-- End Bread crumb -->
@@ -79,9 +79,9 @@ else
                        
 						
 						
-						     <div class="card">
+						    <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">All Registered Restaurants</h4>
+                                <h4 class="card-title">All Restaurants</h4>
 								
                                 <div class="table-responsive m-t-40">
                                     <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">

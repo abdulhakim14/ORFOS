@@ -126,14 +126,14 @@ if(isset($_POST['submit']))           //if upload btn is pressed
 
         <!-- Start header header  -->
             <?php
-            include("./header.php");
+            include("header.php");
             ?>
         <!-- End header header -->
 
 
         <!--Start Left Sidebar  -->
             <?php
-            include("./left_sidebar.php");
+            include("left_sidebar.php");
             ?>
         <!-- End Left Sidebar  -->
 
@@ -143,7 +143,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
             <!-- Bread crumb -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary">Update Menu Info</h3> </div>
+                    <h3 class="text-primary">Menu</h3> </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Options</a></li>
@@ -166,7 +166,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
 					    <div class="col-lg-12">
                         <div class="card card-outline-primary">
                             <div class="card-header">
-                                <h4 class="m-b-0 text-white">Update Menu for Restaurant</h4>
+                                <h4 class="m-b-0 text-white">Update Menu</h4>
                             </div>
                             <div class="card-body">
                                 <form action='' method='post'  enctype="multipart/form-data">

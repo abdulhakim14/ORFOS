@@ -48,14 +48,14 @@ else
 
         <!-- Start header header  -->
             <?php
-            include("./header.php");
+            include("header.php");
             ?>
         <!-- End header header -->
 
 
         <!--Start Left Sidebar  -->
             <?php
-            include("./left_sidebar.php");
+            include("left_sidebar.php");
             ?>
         <!-- End Left Sidebar  -->
 

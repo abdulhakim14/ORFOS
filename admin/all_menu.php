@@ -47,14 +47,14 @@ else
 
         <!-- Start header header  -->
             <?php
-            include("./header.php");
+            include("header.php");
             ?>
         <!-- End header header -->
 
 
         <!--Start Left Sidebar  -->
             <?php
-            include("./left_sidebar.php");
+            include("left_sidebar.php");
             ?>
         <!-- End Left Sidebar  -->
 
@@ -81,7 +81,7 @@ else
 						
 						     <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">All Menu Collection</h4>
+                                <h4 class="card-title">All Menu </h4>
                                 <!-- <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6> -->
 								
                                 <div class="table-responsive m-t-40">

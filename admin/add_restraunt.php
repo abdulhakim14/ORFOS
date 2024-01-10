@@ -146,14 +146,14 @@ else
 
         <!-- Start header header  -->
             <?php
-            include("./header.php");
+            include("header.php");
             ?>
         <!-- End header header -->
 
 
         <!--Start Left Sidebar  -->
             <?php
-            include("./left_sidebar.php");
+            include("left_sidebar.php");
             ?>
         <!-- End Left Sidebar  -->
 
@@ -163,7 +163,7 @@ else
             <!-- Bread crumb -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary">Add Restaurants</h3> </div>
+                    <h3 class="text-primary">Restaurants</h3> </div>
                
             </div>
             <!-- End Bread crumb -->
@@ -209,7 +209,7 @@ else
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="control-label">Phone </label>
-                                                    <input type="text" name="phone" class="form-control" placeholder="1-(555)-555-5555">
+                                                    <input type="text" name="phone" class="form-control" placeholder="01793691481">
                                                    </div>
                                             </div>
                                             <!--/span-->

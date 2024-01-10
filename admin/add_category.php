@@ -88,7 +88,7 @@ else
 
         <!-- Start header header  -->
             <?php
-            include("./header.php");
+            include("header.php");
             ?>
         <!-- End header header -->
 
@@ -96,7 +96,7 @@ else
 
         <!--Start Left Sidebar  -->
             <?php
-            include("./left_sidebar.php");
+            include("left_sidebar.php");
             ?>
         <!-- End Left Sidebar  -->
 
@@ -106,7 +106,7 @@ else
             <!-- Bread crumb -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary"></h3>All Restaurant Categories</div>
+                    <h3 class="text-primary">Restaurants</h3></div>
                
             </div>
             <!-- End Bread crumb -->
