@@ -69,7 +69,7 @@ label.control-label {
 
 
 table { 
-	width: 750px; 
+	width: 1000px; 
 	border-collapse: collapse; 
 	margin: auto;
 	
