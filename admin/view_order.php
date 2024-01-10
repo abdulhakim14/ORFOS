@@ -84,7 +84,7 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
                        
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">All User Orders List</h4>
+                                <h4 class="card-title">User Orders Details</h4>
                              
                                 <div class="table-responsive m-t-20">
                                     <table id="myTable" class="table table-bordered table-striped">

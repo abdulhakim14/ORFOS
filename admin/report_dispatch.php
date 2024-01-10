@@ -15,7 +15,7 @@ session_start();
     <meta name="author" content="">
     <!-- Favicon icon -->
 	<link rel="icon" type="image/png" sizes="16x16" href="images/orfos.png">
-    <title>Admin Dispatch Report</title>
+    <title>Dispatch Report</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -83,7 +83,7 @@ session_start();
                                 </div>
                              
                                 <div class="table-responsive m-t-40">
-                                    <table id="myTable" class="table table-bordered table-striped">
+                                    <table id="example23" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
                                                 <th>User name</th>		
@@ -218,6 +218,7 @@ session_start();
     <script src="js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
     <script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
     <script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+    <script src="js/lib/datatables/datatables-init.js"></script>
     
 </body>
 
