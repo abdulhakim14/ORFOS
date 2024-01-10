@@ -81,6 +81,13 @@ if(isset($_POST['submit'] ))
 
 }
 
+if(empty($_SESSION["adm_id"]))
+{
+	header('location:index.php');
+}
+else
+{
+
 ?>
 <head>
     <meta charset="utf-8">
@@ -275,3 +282,6 @@ if(isset($_POST['submit'] ))
 </body>
 
 </html>
+<?php
+}
+?>

@@ -101,7 +101,12 @@ if(isset($_POST['submit']))           //if upload btn is pressed
 
 
 
-
+if(empty($_SESSION["adm_id"]))
+{
+	header('location:index.php');
+}
+else
+{
 
 
 
@@ -361,3 +366,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
 </body>
 
 </html>
+
+<?php
+}
+?>
