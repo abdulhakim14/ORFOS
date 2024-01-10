@@ -87,7 +87,7 @@ else
                                                 <th>User name</th>		
                                                 <th>Dishes</th>
                                                 <th>Quantity</th>
-                                                <th>Price</th>
+                                                <th>Total Price</th>
 												<th>Address</th>
 												<th>Status</th>												
 												<th>Ordered Date</th>
@@ -117,7 +117,7 @@ else
 																					           <td>'.$rows['username'].'</td>
 																								<td>'.$rows['title'].'</td>
 																								<td>'.$rows['quantity'].'</td>
-																								<td>'.$rows['price'].' Tk</td>
+																								<td>'.$rows['price']*$rows['quantity']+"60".' Tk</td>
 																								<td>'.$rows['address'].'</td>';
 																								?>
 																								<?php 

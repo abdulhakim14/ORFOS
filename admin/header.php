@@ -5,7 +5,7 @@
                 <div class="navbar-header">
                     <a class="navbar-brand" href="dashboard.php">
                         <!-- Logo icon -->
-                        <b><img src="images/orfos-logo.png" alt="homepage" class="dark-logo" width = "80px"/></b>
+                        <b><img src="images/orfos-logo.png" alt="homepage" class="dark-logo" height="40px"  width = "80px"/></b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
                         <span><b>ORFOS</b></span>

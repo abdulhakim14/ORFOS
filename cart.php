@@ -105,7 +105,7 @@ else
                                     <div class="price-wrap text-xs-center">
                                         <p>Total Amount</p>
                                         <h4 class="value"><strong><?php echo $item_total; ?> Tk</strong></h4>
-                                        <p>Free Shipping</p>
+                                    
                                         <a href="checkout.php?res_id=<?php echo $_GET['res_id'];?>&action=check"  class="btn theme-btn btn-lg">Checkout</a>
                                     </div>
                                 </div>

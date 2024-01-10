@@ -113,12 +113,12 @@ else{
                                                             <td><?php echo $item_total; ?> Tk</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Shipping &amp; Handling</td>
-                                                            <td>FREE*</td>
+                                                            <td>Delivery Charge</td>
+                                                            <td>60 Tk</td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="text-color"><strong>Total</strong></td>
-                                                            <td class="text-color"><strong><?php echo $item_total; ?> Tk</strong></td>
+                                                            <td class="text-color"><strong>Total Price</strong></td>
+                                                            <td class="text-color"><strong><?php echo $item_total+"60"; ?> Tk</strong></td>
                                                         </tr>
                                                 </tbody>
 											

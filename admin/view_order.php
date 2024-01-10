@@ -127,11 +127,29 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 													  																			
 											</tr>
 											<tr>
-													<td><strong>Price:</strong></td>
+													<td><strong>Per Price:</strong></td>
 												    <td><center><?php echo $rows['price']; ?> Tk</center></td>
 													   
 												   																							
 											</tr>
+
+
+                                            <tr>
+													<td><strong>Delivery Charge:</strong></td>
+												    <td><center>60 Tk</center></td>
+													   
+												   																							
+											</tr>
+
+
+                                            <tr>
+													<td><strong>Total Price:</strong></td>
+												    <td><center><?php echo $rows['price']*$rows['quantity']+"60"; ?> Tk</center></td>
+													   
+												   																							
+											</tr>
+
+
 											<tr>
 													<td><strong>Address:</strong></td>
 												    <td><center><?php echo $rows['address']; ?></center></td>

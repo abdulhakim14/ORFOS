@@ -175,14 +175,15 @@ only screen and (max-width: 760px),
                     <div class="row">
                         <div class="col-12">
                             <div class="bg-gray restaurant-entry">
-                                <div class="row">
-								
+                                
                                     <table >
                                         <thead>
                                             <tr>
                                                 <th>Item</th>
                                                 <th>Quantity</th>
-                                                <th>Price</th>
+                                                <th>Per Price</th>
+                                                <th>Delivery Charge</th>
+                                                <th>Total Price</th>
                                                 <th>Status</th>
                                                 <th>Date</th>
                                                 <th>Action</th>
@@ -209,6 +210,8 @@ only screen and (max-width: 760px),
                                                 <td data-column="Item"> <?php echo $row['title']; ?></td>
                                                 <td data-column="Quantity"> <?php echo $row['quantity']; ?></td>
                                                 <td data-column="Price"><?php echo $row['price']; ?> Tk</td>
+                                                <td data-column="Delivery Charge">60 Tk</td>
+                                                <td data-column="Total Price"><?php echo $row['price']*$row['quantity']+"60"; ?> Tk</td>
                                                 <td data-column="Status"> 
 
                                                 <?php 
@@ -225,7 +228,7 @@ only screen and (max-width: 760px),
 
                                                     { ?>
 
-                                                <button type="button" class="btn btn-warning"><span class="fa fa-cog fa-spin"  aria-hidden="true" ></span>On the Way!</button>
+                                                <button type="button" class="btn btn-warning"></span>Processing</button>
                                                 
                                                 <?php
                                                     }
@@ -269,8 +272,7 @@ only screen and (max-width: 760px),
 						
 					
                                     
-                                </div>
-                                <!--end:row -->
+                                
                             </div>
                          
                             
